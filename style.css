@@ -353,6 +353,10 @@ td {
   margin-right: 1rem;
 }
 
+.small-header {
+  display: none;
+}
+
 @media screen and (min-width: 1301px) {
   nav {
     padding-bottom: 100px;
@@ -360,20 +364,68 @@ td {
 }
 
 @media screen and (max-width: 1300px) {
+  body {
+    font-size: 14px;
+  }
+
+  nav {
+    width: 230px;
+  }
+
+  nav ul {
+    margin-bottom: 40px;
+  }
+
+  .watermark {
+    width: 230px;
+  }
+
+  
+  thead {
+    font-size: 12px;
+  }
+
+  th {
+    padding: 1px;
+  }
+
+  tbody {
+    font-size: 12px;
+  }
+  
+  .small-header {
+    display: block;
+  }
+
+  #menuBtn {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .menu-header {
+    display: none;
+  }
+  .nav-icon {
+    display: none;
+  }
   #container {
     margin-left: 5px;
     margin-right: 5px;
   }
-
+  
   nav {
     padding-bottom: 100px;
   }
-
+  
   .container-1 {
     margin: 1em;
     flex-wrap: wrap;
   }
-
+  
+  .container-2 h2 {
+    font-size: 14px;
+  }
+  
   .container-2 {
     flex-wrap: wrap;
     margin: 1em;
@@ -381,6 +433,12 @@ td {
 }
 
 @media screen and (max-width: 600px) {
+  .search {
+    display: none;
+  }
+  .logout  {
+    display: none;
+  }
   .container-1 {
     flex: 1 1 100%;
   }
