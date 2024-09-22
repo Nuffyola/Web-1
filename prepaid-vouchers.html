@@ -1,9 +1,9 @@
-<html lang="en">
+<html lang="en"></html>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="sub-menu.css"><link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
@@ -150,111 +150,53 @@
     <script src="script.js"></script>
 
     <div class="sticky-header">0</div>
-    
-    <!-- Container 1 -->
-  <div class="container-1" id="container">
-    <div class="container">
-      <div class="box-1">
-        <div class="balance">
-          <h2 class="income" id="income-1">0 TK</h2>
-          <p>Income Today</p>
+      
+    <div class="sub-menu">
+      <p class="header">PREPAID VOUCHERS</p>
+      <div class="form">
+        <form action="" method="get">
+          <div class="search-btn">
+            <input type="button" value="s" class="btn-1">
+            <input type="search" name="" id="username" placeholder="Search by Username" class="input">
+            <input type="button" value="Search" class="btn-2">
+          </div>
+        </form>
+        <form action="" method="post" class="input-btn">
+          <button class="btn-add">+ Add Vouchers</button>
+          <button class="btn-print">
+            <p>Icon</p>
+            <p>Print</p>
+          </button>
+        </form>
+      </div>
+        <div class="table-section">
+          <table>
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Type</th>
+                <th>Routers</th>
+                <th>Plan Name</th>
+                <th>Code Voucher</th>
+                <th>Status Voucher</th>
+                <th>Customer</th>
+                <th>Manage</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
         </div>
-        <div class="icon"><img src="./icon/price.png" alt="" style="width: 50px;"></div>
-      </div>
-      <div class="box-2" id="box_container-1">
-        <a href="#">View Reports</a>
-      </div>
     </div>
-    <div class="container">
-      <div class="box-1">
-        <div class="balance">
-          <h2 class="income" id="income-2">0 TK</h2>
-          <p>Income This Month</p>
-        </div>
-        <div class="icon"><img src="./icon/money.png" alt="" style="width: 50px;"></div>
-      </div>
-      <div class="box-2" id="box_container-2">
-        <a href="#">View Reports</a>
-      </div>
-    </div>
-    <div class="container">
-      <div class="box-1">
-        <div class="balance">
-          <h2 class="income" id="income-3">0</h2>
-          <p>Users Active</p>
-        </div>
-        <div class="icon"><img src="./icon/person.png" alt="" style="width: 50px;"></div>
-      </div>
-      <div class="box-2" id="box_container-3">
-        <a href="#">View Reports</a>
-      </div>
-    </div>
-    <div class="container">
-      <div class="box-1">
-        <div class="balance">
-          <h2 class="income" id="income-4">0</h2>
-          <p>Total Users</p>
-        </div>
-        <div class="icon"><img src="./icon/people.png" alt="" style="width: 50px;"></div>
-      </div>
-      <div class="box-2" id="box_container-4">
-        <a href="#">View Reports</a>
-      </div>
-    </div>
-  </div>
-
-<!-- Container-2 -->
-<div class="container-2" id="container">
-  <div class="box-table-1">
-    <div class="box-21" id="box-21">
-      <h2>VOUCHERS STOCK</h2>
-      <table class="table-1">
-        <thead>
-          <tr>
-            <th>Plan Name</th>
-            <th>Unused</th>
-            <th>Used</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Total</td>
-            <td>0</td>
-            <td>0</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    <div class="box-21" id="box-22">
-      <h2>USER EXPIRED, TODAY</h2>
-      <table class="table-2">
-        <thead>
-          <tr>
-            <th>Id</th>
-            <th>Username</th>
-            <th>Created On</th>
-            <th>Expires On</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-  <div class="box-table-2">
-    <div class="box-22" id="box-22"><h2>PAYMENT GATEWAY: NONE</h2></div>
-    <div class="box-22" id="box-23">
-      <h2>ACTIVITY LOG</h2>
-      <h2 class="box-231">VERSION 6.1.2</h2>
-    </div>
-  </div>
-</div>
-
 </body>
 </html>

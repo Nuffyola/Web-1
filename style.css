@@ -7,7 +7,7 @@
 body {
   background-color: #eaeaea;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   position: relative;
 }
 
@@ -21,11 +21,13 @@ header {
   background-color: #3f51b5;
   height: 60px;
   z-index: 1000;
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
 }
 
 .nav-icon {
-  padding: 7px;
+  padding: 0;
   background-color: #072196;
+  width: 60px;
   height: 60px;
   display: flex;
   align-items: center;
@@ -33,7 +35,7 @@ header {
 }
 
 .nav-icon img {
-  height: 50px;
+  width: 30px;
 }
 
 header h1  {
@@ -47,15 +49,18 @@ header h1  {
 
 .search {
   display: flex;
-  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
 }
 
 #search_customers {
   padding: 10px;
 }
 
-#scan {
-  width: 35px;
+.logout {
+  display: flex;
+  gap: 7px;
 }
 
 #header {
@@ -68,12 +73,13 @@ header h1  {
 
 .menu-header {
   background-color: #072196;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); */
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 240px;
+  margin-left: 0;
+  padding-right: 10px;
 }
 
 #menuBtn {
@@ -118,12 +124,17 @@ nav {
   position: fixed;
   top: 60px;
   color: #000;
-  width: 303px;
+  width: 215px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   height: 100vh;
+  padding-bottom: 90px;
+  left: 0;
+}
+
+nav:hover {
   overflow-y: scroll;
   scrollbar-width: thin;
-  left: 0;
+
 }
 
 nav a {
@@ -189,9 +200,46 @@ nav ul li a {
   width: 100%;
 }
 
-li:hover {
+a:hover {
   background-color: #eeeeee;
 }
+
+summary:hover {
+  background-color: #eeeeee;
+}
+
+summary {
+  padding: 12px;
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.arrow {
+  width: 8px;
+  position: relative;
+}
+
+.top-arrow {
+  top: 5.5;
+  left: 0;
+  height: 1px;
+  width: 8px;
+  position: absolute;
+  transform: rotate(145deg);
+  background-color: #272727;
+}
+.bottom-arrow {
+  height: 1px;
+  left: 0;
+  width: 8px;
+  position: absolute;
+  transform: rotate(30deg);
+  background-color: #272727;
+  bottom: 5.5;
+}
+
 
 /* Watermark */
 .watermark {
@@ -199,7 +247,7 @@ li:hover {
   z-index: 1000;
   bottom: 0;
   background-color: #eeeeee;
-  width: 303px;
+  width: 215px;
   padding: 1em;
   text-align: center;
   font-size: 14px;
@@ -228,10 +276,10 @@ a {
 }
 
 .container {
-  flex: 1;
+  flex-grow: 1;
   display: flex;
   flex-direction: column;
-  min-width: 250px;
+  min-width: 190px;
   margin-bottom: 1.2rem;
   border-radius: 2px;
   box-shadow: 0 0 5px rgba(41, 41, 41, 0.1);
@@ -349,7 +397,7 @@ td {
 }
 
 #container {
-  margin-left: 350px;
+  margin-left: 235px;
   margin-right: 1rem;
 }
 
@@ -368,18 +416,28 @@ td {
     font-size: 14px;
   }
 
-  nav {
-    width: 230px;
+  #menuBtn {
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
 
   nav ul {
     margin-bottom: 40px;
   }
 
-  .watermark {
-    width: 230px;
+  .search {
+    display: flex;
+    margin-right: 1rem;
+  }
+  
+  #search_customers {
+    padding: 5px;
+    width: 100%;
   }
 
+  /* .logout p {
+    
+  } */
   
   thead {
     font-size: 12px;
@@ -393,6 +451,27 @@ td {
     font-size: 12px;
   }
   
+  
+  .container-1 {
+    flex-wrap: wrap;
+  }
+  
+  .container-2 h2 {
+    font-size: 14px;
+  }
+  
+  .container-2 {
+    flex-wrap: wrap;
+    margin: 1em;
+  }
+  .container {
+    margin-bottom: 5px;
+    flex: 1 1 40%;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
   .small-header {
     display: block;
   }
@@ -408,45 +487,26 @@ td {
   .nav-icon {
     display: none;
   }
-  #container {
-    margin-left: 5px;
-    margin-right: 5px;
-  }
   
   nav {
     padding-bottom: 100px;
     height: 100%;
   }
-  
-  .container-1 {
-    margin: 1em;
-    flex-wrap: wrap;
-  }
-  
-  .container-2 h2 {
-    font-size: 14px;
-  }
-  
-  .container-2 {
-    flex-wrap: wrap;
-    margin: 1em;
-  }
-}
-
-@media screen and (max-width: 600px) {
   .search {
     display: none;
   }
   .logout  {
     display: none;
   }
-  .container-1 {
-    flex: 1 1 100%;
+  #container {
+    margin-left: 1rem;
+    flex: 1;
   }
-
-  .container-2 {
+  /* .container-2 {
     display: flex;
     flex-direction: column;
-  }
+    overflow-x: scroll;
+  } */
+
 }
 
