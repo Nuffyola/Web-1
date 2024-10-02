@@ -3,32 +3,65 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="sub-menu.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="sub-menu.css">  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
     <div class="nav-icon">
-      <img src="./icon/money.png" alt="">
+    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 28" style="fill: rgb(255, 255, 255);"><path d="M17.671 14.307C16.184 12.819 14.17 12 12 12s-4.184.819-5.671 2.307l1.414 1.414c1.11-1.11 2.621-1.722 4.257-1.722 1.636.001 3.147.612 4.257 1.722l1.414-1.414z"></path><path d="M20.437 11.292c-4.572-4.573-12.301-4.573-16.873 0l1.414 1.414c3.807-3.807 10.238-3.807 14.045 0l1.414-1.414z"></path><path d="M20.437 11.292c-4.572-4.573-12.301-4.573-16.873 0l1.414 1.414c3.807-3.807 10.238-3.807 14.045 0l1.414-1.414z"></path><circle cx="12" cy="18" r="2"></circle></svg>
     </div>
-    <div class="navBar" id="navBar">
+    <div class="sidebar" id="sidebar">
       <h1 class="menu-header">PHPMIXBILL</h1>
       <nav>
       <div class="scroll_menu">
-          <div class="user">
-            <img src="./user/user-01.jpg.webp" alt="">
-            <div class="user-id">
-              <a href="#">Administrator</a>
-              <p>Administrator</p>
+        <details>
+          <summary class="user-profile">
+            <div class="user" href="#">
+              <img src="./user/user-01.jpg.webp" alt="">
+              <span class="sidebar-text">
+                <details>
+                  <summary class="user-profile">
+                    <span class="user-name">Administrator</span>
+                    <span class="user-details"></span>
+                  </summary>
+                  <div class="menu-account">
+                    <a href="" class="profile">
+                      <svg xmlns="http://www.w3.org/2000/svg" height="12" fill="#2f2727" viewBox="0 0 256 256"><path d="M230.93,220a8,8,0,0,1-6.93,4H32a8,8,0,0,1-6.92-12c15.23-26.33,38.7-45.21,66.09-54.16a72,72,0,1,1,73.66,0c27.39,8.95,50.86,27.83,66.09,54.16A8,8,0,0,1,230.93,220Z"></path></svg>
+                      <span class="account-info">My Account</span>
+                    </a>
+                    <a href="" class="profile">
+                      <svg xmlns="http://www.w3.org/2000/svg" height="12" viewBox="0 0 576 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#000000" d="M413.5 237.5c-28.2 4.8-58.2-3.6-80-25.4l-38.1-38.1C280.4 159 272 138.8 272 117.6l0-12.1L192.3 62c-5.3-2.9-8.6-8.6-8.3-14.7s3.9-11.5 9.5-14l47.2-21C259.1 4.2 279 0 299.2 0l18.1 0c36.7 0 72 14 98.7 39.1l44.6 42c24.2 22.8 33.2 55.7 26.6 86L503 183l8-8c9.4-9.4 24.6-9.4 33.9 0l24 24c9.4 9.4 9.4 24.6 0 33.9l-88 88c-9.4 9.4-24.6 9.4-33.9 0l-24-24c-9.4-9.4-9.4-24.6 0-33.9l8-8-17.5-17.5zM27.4 377.1L260.9 182.6c3.5 4.9 7.5 9.6 11.8 14l38.1 38.1c6 6 12.4 11.2 19.2 15.7L134.9 484.6c-14.5 17.4-36 27.4-58.6 27.4C34.1 512 0 477.8 0 435.7c0-22.6 10.1-44.1 27.4-58.6z"/></svg>
+                      <span class="account-info">Change Password</span>
+                    </a>
+                    <a href="#" class="profile">
+                      <svg xmlns="http://www.w3.org/2000/svg" height="12" fill="#2f2727" viewBox="0 0 256 256"><path d="M116,128V48a12,12,0,0,1,24,0v80a12,12,0,0,1-24,0Zm66.55-82a12,12,0,0,0-13.1,20.1C191.41,80.37,204,103,204,128a76,76,0,0,1-152,0c0-25,12.59-47.63,34.55-61.95A12,12,0,0,0,73.45,46C44.56,64.78,28,94.69,28,128a100,100,0,0,0,200,0C228,94.69,211.44,64.78,182.55,46Z"></path></svg>
+                      <span class="account-info">Logout</span>
+                    </a>
+                  </div>
+                </details>
+                <p>Administrator</p>
+              </span>
             </div>
-          </div>
+          </summary>
+        </details>
         <ul>
           <li>
-            <a href="index.html">DASHBOARD</a>
+            <details>
+              <summary class="fa-nav dashboard">
+                <div class="detail-name" href="#">
+                    <svg class="fa-nav-icon icon-container dashboard-icon" id="navIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M64 0C28.7 0 0 28.7 0 64L0 352c0 35.3 28.7 64 64 64l176 0-10.7 32L160 448c-17.7 0-32 14.3-32 32s14.3 32 32 32l256 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-69.3 0L336 416l176 0c35.3 0 64-28.7 64-64l0-288c0-35.3-28.7-64-64-64L64 0zM512 64l0 288L64 352 64 64l448 0z"/></svg>
+                    <span class="sidebar-text">DASHBOARD</span>
+                  </div>
+                </summary>
+            </details>
           </li>
           <li>
             <details>
-              <summary>CUSTOMERS
+              <summary class=" fa-nav">
+                <div class="detail-name">
+                  <svg class="fa-nav-icon icon-container" id="navIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><path d="M164.47,195.63a8,8,0,0,1-6.7,12.37H10.23a8,8,0,0,1-6.7-12.37,95.83,95.83,0,0,1,47.22-37.71,60,60,0,1,1,66.5,0A95.83,95.83,0,0,1,164.47,195.63Zm87.91-.15a95.87,95.87,0,0,0-47.13-37.56A60,60,0,0,0,144.7,54.59a4,4,0,0,0-1.33,6A75.83,75.83,0,0,1,147,150.53a4,4,0,0,0,1.07,5.53,112.32,112.32,0,0,1,29.85,30.83,23.92,23.92,0,0,1,3.65,16.47,4,4,0,0,0,3.95,4.64h60.3a8,8,0,0,0,7.73-5.93A8.22,8.22,0,0,0,252.38,195.48Z"></path></svg>
+                  <span class="sidebar-text">CUSTOMERS</span>
+                </div>
                 <div class="arrow">
                   <span class="top-arrow arrow-body"></span>
                   <span class="bottom-arrow arrow-body"></span>
@@ -40,7 +73,11 @@
           </li>
           <li>
             <details>
-              <summary>PREPAID
+              <summary class=" fa-nav">
+                <div class="detail-name">
+                  <svg class="fa-nav-icon icon-container" id="navIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 4H4c-1.103 0-2 .897-2 2v12c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zM4 6h16v2H4V6zm0 12v-6h16.001l.001 6H4z"></path><path d="M6 14h6v2H6z"></path></svg>
+                  <span class="sidebar-text">PREPAID</span>
+                </div>
                 <div class="arrow">
                   <span class="top-arrow arrow-body"></span>
                   <span class="bottom-arrow arrow-body"></span>
@@ -54,7 +91,11 @@
           </li>
           <li>
             <details>
-              <summary>SERVICES
+              <summary class=" fa-nav">
+                <div class="detail-name">
+                  <svg class="fa-nav-icon icon-container" id="navIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><path d="M223.68,66.15,135.68,18a15.88,15.88,0,0,0-15.36,0l-88,48.17a16,16,0,0,0-8.32,14v95.64a16,16,0,0,0,8.32,14l88,48.17a15.88,15.88,0,0,0,15.36,0l88-48.17a16,16,0,0,0,8.32-14V80.18A16,16,0,0,0,223.68,66.15ZM128,120,47.65,76,128,32l80.35,44Zm8,99.64V133.83l80-43.78v85.76Z"></path></svg>
+                  <span class="sidebar-text">SERVICES</span>
+                </div>
                 <div class="arrow">
                   <span class="top-arrow arrow-body"></span>
                   <span class="bottom-arrow arrow-body"></span>
@@ -67,7 +108,11 @@
           </li>
           <li>
             <details>
-              <summary>REPORTS
+              <summary class=" fa-nav">
+              <div class="detail-name">
+                <svg class="fa-nav-icon icon-container" id="navIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><path d="M168,152a8,8,0,0,1-8,8H96a8,8,0,0,1,0-16h64A8,8,0,0,1,168,152Zm-8-40H96a8,8,0,0,0,0,16h64a8,8,0,0,0,0-16Zm56-64V216a16,16,0,0,1-16,16H56a16,16,0,0,1-16-16V48A16,16,0,0,1,56,32H92.26a47.92,47.92,0,0,1,71.48,0H200A16,16,0,0,1,216,48ZM96,64h64a32,32,0,0,0-64,0ZM200,48H173.25A47.93,47.93,0,0,1,176,64v8a8,8,0,0,1-8,8H88a8,8,0,0,1-8-8V64a47.93,47.93,0,0,1,2.75-16H56V216H200Z"></path></svg>
+                <span class="sidebar-text">REPORTS</span>
+              </div>
                 <div class="arrow">
                   <span class="top-arrow arrow-body"></span>
                   <span class="bottom-arrow arrow-body"></span>
@@ -79,7 +124,11 @@
           </li>
           <li>
             <details>
-              <summary>NETWORK
+              <summary class=" fa-nav">
+                <div class="detail-name">
+                  <svg class="fa-nav-icon icon-container" id="navIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5.559 8.855c.166 1.183.789 3.207 3.087 4.079C11 13.829 11 14.534 11 15v.163c-1.44.434-2.5 1.757-2.5 3.337 0 1.93 1.57 3.5 3.5 3.5s3.5-1.57 3.5-3.5c0-1.58-1.06-2.903-2.5-3.337V15c0-.466 0-1.171 2.354-2.065 2.298-.872 2.921-2.896 3.087-4.079C19.912 8.441 21 7.102 21 5.5 21 3.57 19.43 2 17.5 2S14 3.57 14 5.5c0 1.552 1.022 2.855 2.424 3.313-.146.735-.565 1.791-1.778 2.252-1.192.452-2.053.953-2.646 1.536-.593-.583-1.453-1.084-2.646-1.536-1.213-.461-1.633-1.517-1.778-2.252C8.978 8.355 10 7.052 10 5.5 10 3.57 8.43 2 6.5 2S3 3.57 3 5.5c0 1.602 1.088 2.941 2.559 3.355zM17.5 4c.827 0 1.5.673 1.5 1.5S18.327 7 17.5 7 16 6.327 16 5.5 16.673 4 17.5 4zm-4 14.5c0 .827-.673 1.5-1.5 1.5s-1.5-.673-1.5-1.5.673-1.5 1.5-1.5 1.5.673 1.5 1.5zM6.5 4C7.327 4 8 4.673 8 5.5S7.327 7 6.5 7 5 6.327 5 5.5 5.673 4 6.5 4z"></path></svg>
+                  <span class="sidebar-text">NETWORK</span>
+                </div>
                 <div class="arrow">
                   <span class="top-arrow arrow-body"></span>
                   <span class="bottom-arrow arrow-body"></span>
@@ -91,7 +140,11 @@
           </li>
           <li>
             <details>
-              <summary>STATIC PAGES
+              <summary class=" fa-nav">
+                <div class="detail-name">
+                  <svg class="fa-nav-icon icon-container" id="navIcon" xmlns="http://www.w3.org/2000/svg" width="40" height="30" viewBox="0 0 24 24"><path d="M19.937 8.68c-.011-.032-.02-.063-.033-.094a.997.997 0 0 0-.196-.293l-6-6a.997.997 0 0 0-.293-.196c-.03-.014-.062-.022-.094-.033a.991.991 0 0 0-.259-.051C13.04 2.011 13.021 2 13 2H6c-1.103 0-2 .897-2 2v16c0 1.103.897 2 2 2h12c1.103 0 2-.897 2-2V9c0-.021-.011-.04-.013-.062a.99.99 0 0 0-.05-.258zM16.586 8H14V5.414L16.586 8zM6 20V4h6v5a1 1 0 0 0 1 1h5l.002 10H6z"></path></svg>
+                  <span class="sidebar-text">STATIC PAGES</span>
+                </div>
                 <div class="arrow">
                   <span class="top-arrow arrow-body"></span>
                   <span class="bottom-arrow arrow-body"></span>
@@ -103,7 +156,11 @@
           </li>
           <li>
             <details>
-              <summary>SETTINGS
+              <summary class="fa-nav">
+                <div class="detail-name">
+                <svg class="fa-nav-icon icon-container" id="navIcon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#030303" viewBox="0 0 256 256"><path d="M216,130.16q.06-2.16,0-4.32l14.92-18.64a8,8,0,0,0,1.48-7.06,107.6,107.6,0,0,0-10.88-26.25,8,8,0,0,0-6-3.93l-23.72-2.64q-1.48-1.56-3-3L186,40.54a8,8,0,0,0-3.94-6,107.29,107.29,0,0,0-26.25-10.86,8,8,0,0,0-7.06,1.48L130.16,40Q128,40,125.84,40L107.2,25.11a8,8,0,0,0-7.06-1.48A107.6,107.6,0,0,0,73.89,34.51a8,8,0,0,0-3.93,6L67.32,64.27q-1.56,1.49-3,3L40.54,70a8,8,0,0,0-6,3.94,107.71,107.71,0,0,0-10.87,26.25,8,8,0,0,0,1.49,7.06L40,125.84Q40,128,40,130.16L25.11,148.8a8,8,0,0,0-1.48,7.06,107.6,107.6,0,0,0,10.88,26.25,8,8,0,0,0,6,3.93l23.72,2.64q1.49,1.56,3,3L70,215.46a8,8,0,0,0,3.94,6,107.71,107.71,0,0,0,26.25,10.87,8,8,0,0,0,7.06-1.49L125.84,216q2.16.06,4.32,0l18.64,14.92a8,8,0,0,0,7.06,1.48,107.21,107.21,0,0,0,26.25-10.88,8,8,0,0,0,3.93-6l2.64-23.72q1.56-1.48,3-3L215.46,186a8,8,0,0,0,6-3.94,107.71,107.71,0,0,0,10.87-26.25,8,8,0,0,0-1.49-7.06ZM128,168a40,40,0,1,1,40-40A40,40,0,0,1,128,168Z"></path></svg>
+                <span class="sidebar-text">SETTINGS</span>
+              </div>
                 <div class="arrow">
                   <span class="top-arrow arrow-body"></span>
                   <span class="bottom-arrow arrow-body"></span>
@@ -114,10 +171,24 @@
             </details>
           </li>
           <li>
-            <a href="#">PAYMENT GATEWAY</a>
+            <details>
+              <summary class="fa-nav">
+                <div class="detail-name payment" href="#">
+                    <svg class="fa-nav-icon icon-container payment-icon" id="navIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><path d="M128,88a40,40,0,1,0,40,40A40,40,0,0,0,128,88Zm0,64a24,24,0,1,1,24-24A24,24,0,0,1,128,152ZM240,56H16a8,8,0,0,0-8,8V192a8,8,0,0,0,8,8H240a8,8,0,0,0,8-8V64A8,8,0,0,0,240,56ZM193.65,184H62.35A56.78,56.78,0,0,0,24,145.65v-35.3A56.78,56.78,0,0,0,62.35,72h131.3A56.78,56.78,0,0,0,232,110.35v35.3A56.78,56.78,0,0,0,193.65,184ZM232,93.37A40.81,40.81,0,0,1,210.63,72H232ZM45.37,72A40.81,40.81,0,0,1,24,93.37V72ZM24,162.63A40.81,40.81,0,0,1,45.37,184H24ZM210.63,184A40.81,40.81,0,0,1,232,162.63V184Z"></path></svg>
+                    <span class="sidebar-text">PAYMENT GATEWAY</span>
+                  </div>
+                </summary>
+            </details>
           </li>
           <li>
-            <a href="#">COMMUNITY</a>
+            <details>
+              <summary class="fa-nav">
+                <div class="detail-name community" href="#">
+                    <svg class="fa-nav-icon icon-container community-icon" id="navIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="transform: scaleX(-1);msFilter:progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1);"><path d="M13 14h3.5c.827 0 1.5-.673 1.5-1.5v-9c0-.827-.673-1.5-1.5-1.5h-13C2.673 2 2 2.673 2 3.5V18l5.333-4H13zm-9-.1.154-.016L4 14v-.1z"></path><path d="M20.5 8H20v6.001c0 1.1-.893 1.993-1.99 1.999H8v.5c0 .827.673 1.5 1.5 1.5h7.167L22 22V9.5c0-.827-.673-1.5-1.5-1.5z"></path></svg>
+                    <span class="sidebar-text">COMMUNITY</span>
+                  </div>
+                </summary>
+            </details>
           </li>
         </ul>
         </div>
@@ -127,7 +198,7 @@
 
     <div id="header">
       <div class="header-1">
-        <div class="toggle" id="menuBtn">
+        <div class="toggle" id="toggleButton">
           <span class="top_line common"></span>
           <span class="mid_line common"></span>
           <span class="bottom_line common"></span>
@@ -136,13 +207,13 @@
           <form action="/search" method="get" class="contact">
             <input type="search" placeholder="Search Customers..." id="search_customers">
           </form>
-          <input type="button" value="" id="scan" style="width: 20px;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" style="fill: rgb(255, 255, 255);"><path d="M3 4v5h2V5h4V3H4a1 1 0 0 0-1 1zm18 5V4a1 1 0 0 0-1-1h-5v2h4v4h2zm-2 10h-4v2h5a1 1 0 0 0 1-1v-5h-2v4zM9 21v-2H5v-4H3v5a1 1 0 0 0 1 1h5zM2"></path></svg>
         </div>
       </div>
       <h1 class="small-header">PHPMIXBILL</h1>
         <div class="header-2">
           <div class="logout">
-            <input type="button" value="" id="logout" style="width: 20px;">  
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="20" viewBox="0 0 10 29" style="fill: rgb(255, 255, 255);"><path d="M12 21c4.411 0 8-3.589 8-8 0-3.35-2.072-6.221-5-7.411v2.223A6 6 0 0 1 18 13c0 3.309-2.691 6-6 6s-6-2.691-6-6a5.999 5.999 0 0 1 3-5.188V5.589C6.072 6.779 4 9.65 4 13c0 4.411 3.589 8 8 8z"></path><path d="M11 5h2v8h-2z"></path></svg>
             <p>Logout</p>
           </div>
         </div>
@@ -151,7 +222,7 @@
     <script src="script.js"></script>
 
     <div class="sticky-header">0</div>
-      
+    
     <div class="sub-menu">
       <p class="header">MANAGE CONTACT</p>
       <div class="form">

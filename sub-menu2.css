@@ -10,10 +10,14 @@ body {
   margin: 15px;
   background-color: #fff;
   padding: 1px 12px;
-  margin-left: 230px;
+  margin-left: 235px;
   padding-bottom: 1rem;
   border-radius: 5px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.collapsed .form {
+  margin-left: 75px;
 }
 
 .header {
@@ -85,6 +89,10 @@ select {
   border-bottom: 1px solid #eaeaea;
 }
 
+.transaction-option{
+  padding: 15px;
+}
+
 #period-reports {
   background-color: rgb(69, 69, 216);
   color: white;
@@ -96,13 +104,49 @@ select {
   box-shadow: 0 0 7px rgba(0, 0, 0, 0.3); 
 }
 
+@media screen and (max-width: 1300px) {
+  .collapsed .form {
+    margin-left: 75px;
+  }
+  .input {
+    display: flex;
+    padding-right: 0;
+    justify-content: flex-start;
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .input input {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  select {
+    width: 100%;
+  }
+
+  .submit {
+    margin-left: 140;
+  }
+}
+
 @media screen and (max-width: 600px) {
-  .form {
-    margin-left: 1rem;
+  .collapsed form {
+    margin-left: 0;
   }
   form {
     display: flex;
     flex-direction: column;
+    margin-left: 1rem;
+  }
+  .collapsed .form {
+    margin-left: 1rem;
+  }
+  .form {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
   }
   .input {
     margin: 12px;
@@ -112,9 +156,7 @@ select {
     flex-direction: column;
   }
 
-  .input input {
-    width: 100%;
-  }
+  
 
   .submit {
     display: flex;
